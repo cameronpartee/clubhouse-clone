@@ -1,6 +1,13 @@
 {
-    "members": [{
+    "members": 
+    [
+        {
         "first_name": "Sriram",
         "last_name": "krishnan"
-    }]
+        },
+        {
+        "first_name": "Cameron",
+        "last_name": "Partee"
+        }
+    ]
 }
