@@ -7,13 +7,12 @@ import { BsGrid3X3Gap } from "react-icons/bs";
 import BottomSheet from "../components/BottomSheet";
 import data from "../data/roomCard.json";
 import { useState } from "react";
-import NewRoom from "../components/bottom_sheets/NewRoom";
 import newRoomData from "../data/newRoom.json";
 
 export default function Home() {
   const [itemsVisible, setItemsVisible] = useState(true);
   const [sheetVisible, setSheetVisible] = useState(false);
-  const [seetCreateRoom, setSheetCreateRoom] = useState(false);
+  const [sheetCreateRoom, setSheetCreateRoom] = useState(false);
   const [loaderVisibility, setLoaderVisibility] = useState(false);
   const [cardId, setCardId] = useState(1);
   return (
@@ -67,7 +66,7 @@ export default function Home() {
       <BottomSheet
         sheetTitle="new room"
         setSheetVisible={(item) => setSheetCreateRoom(item)}
-        sheetVisible={setSheetCreateRoom}
+        sheetVisible={sheetCreateRoom}
         cardDetail={newRoomData}
         setItemsVisible={(item) => setItemsVisible(item)}
       />
